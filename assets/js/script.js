@@ -14,29 +14,29 @@
  //# sourceMappingURL=swiper-bundle.min.js.map;
 
 
-let portfolioSwiper = new Swiper('.portfolio__slider', {
-   spaceBetween: 40,
-   loop: true,
-   slidesPerView: 4,
-   breakpoints: {
-      320: {
-         slidesPerView: 1,
-         spaceBetween: 12
-      },
-      600: {
-         slidesPerView: 2,
-         spaceBetween: 20
-      },
-      991: {
-         slidesPerView: 3,
-         spaceBetween: 20
-      },
-      1280: {
-         slidesPerView: 4,
-         spaceBetween: 40,
-      },
-   }
-});
+// let portfolioSwiper = new Swiper('.portfolio__slider', {
+//    spaceBetween: 40,
+//    loop: true,
+//    slidesPerView: 4,
+//    breakpoints: {
+//       320: {
+//          slidesPerView: 1,
+//          spaceBetween: 12
+//       },
+//       600: {
+//          slidesPerView: 2,
+//          spaceBetween: 20
+//       },
+//       991: {
+//          slidesPerView: 3,
+//          spaceBetween: 20
+//       },
+//       1280: {
+//          slidesPerView: 4,
+//          spaceBetween: 40,
+//       },
+//    }
+// });
 
 let banerSwiper = new Swiper('.banner__slider', {
    slidesPerView: 1,
@@ -50,6 +50,10 @@ let banerSwiper = new Swiper('.banner__slider', {
    navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
+   },
+   autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
    },
    // pagination: {
    //    el: '.swiper-pagination',
