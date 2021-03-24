@@ -1,72 +1,14 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-   <meta charset="UTF-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title></title>
-   <meta property="og:description" content="">
-   <link rel="shortcut icon" href="assets/img/icons" type="image/ico">
-
-
-   <link rel="stylesheet" href="assets/style/style.min.css">
-   <!-- Google Tag Manager -->
-   <!-- <script>(function (w, d, s, l, i) {
-         w[l] = w[l] || []; w[l].push({
-            'gtm.start':
-               new Date().getTime(), event: 'gtm.js'
-         }); var f = d.getElementsByTagName(s)[0],
-            j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-               'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-      })(window, document, 'script', 'dataLayer', 'GTM-WRF7S9B');</script> -->
-   <!-- End Google Tag Manager -->
-</head>
-<!-- Google Tag Manager (noscript) -->
-<!-- <noscript>
-   <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WRF7S9B" height="0" width="0" style="display:none;visibility:hidden">
-   </iframe>
-</noscript> -->
-<!-- End Google Tag Manager (noscript) -->
+@@include("assets/html/head.html",{
+"title": "",
+"description": "",})
 
 
 <body class="body">
 
-   <header class="header">
-   <div class="header__wrapper">
-      <a class="header__link link" href="https://www.pult.ru/" target="_blank">
-         <img class="header__img" src="assets/img/icons/logo_svs.svg" alt="svs">
-      </a>
-      <a class="header__link link" href="https://www.pult.ru/" target="_blank">
-         <img class="header__img header__img--pult" src="assets/img/icons/logo_pult.svg" alt="pult.ru">
-      </a>
-   </div>
-</header>
-   <section class="banner">
-   <!-- <div class="wrapper"> -->
-      <div class="banner__slider swiper-container">
-         <ul class="banner__slider-wrapper swiper-wrapper">
-            <li class="banner__slide swiper-slide">
-               <a class="banner__link link" href="#">
-                  <img src="assets/img/banner/banner0.jpg" alt="img" class="banner__slide-img">
-               </a>
-            </li>
-            <li class="banner__slide swiper-slide">
-               <a class="banner__link link" href="#">
-                  <img src="assets/img/banner/banner1.jpg" alt="img" class="banner__slide-img">
-               </a>
-            </li>
-            <li class="banner__slide swiper-slide">
-               <a class="banner__link link" href="#">
-                  <img src="assets/img/banner/banner2.jpg" alt="img" class="banner__slide-img">
-               </a>
-            </li>
-         </ul>
-         <!-- <div class="sld__slider-pagination swiper-pagination"></div> -->
-         <div class="sld__slider-button-next swiper-button-next"></div>
-         <div class="sld__slider-button-prev swiper-button-prev"></div>
-      </div>
-   <!-- </div> -->
-</section>
+   @@include("assets/html/header.html",{})
+   @@include("assets/html/banner.html",{})
    <div class="main">
       <div class="menu">
          <!-- <div class="wrapper"> -->
@@ -121,13 +63,13 @@
                <div class="product__description-block">
                   <p class="product__text">Сабвуфер SVS SB-1000 с направленным вперед динамиком обладает достаточно высоким значением пиковой мощности. Устройство способно обслуживать апартаменты больших размеров хорошим и очень насыщенным звучанием. Искажения минимальны, и это стало следствием произведенной необычной конструкции саба. Богатый набор характеристик дополняет внешние особенности модели.</p>
                   <ul class="product__colors">
-                     <li class="product__color">
-                        <a href="" class="product__color-link link bold">black</a>
+                     <li class="product__color" data-img="assets/img/1000/PD-1000.jpg">
+                        <a href=""  class="product__color-link link bold">black</a>
                      </li>
-                     <li class="product__color">
+                     <li class="product__color" data-img="assets/img/1000/PD-1000_pb.jpg">
                         <a href="" class="product__color-link link bold">piano black</a>
                      </li>
-                     <li class="product__color">
+                     <li class="product__color" data-img="assets/img/1000/PD-1000_pw.jpg">
                         <a href="" class="product__color-link link bold">piano white</a>
                      </li>
                   </ul>
@@ -140,89 +82,9 @@
 
       </section>
    </div>
-   <footer class="footer">
-   <div class="wrapper">
-
-      <div class="footer__blocks">
-         <div class="footer__block-hello">
-            <div class="footer__logo">
-               <a class="footer__logo-link link" target="_blank" href="https://www.pult.ru/">
-                  <img class="footer__logo-img" src="assets/img/icons/logo_pult.svg" alt="pult.ru">
-               </a>
-            </div>
-            <div class="footer__call">
-               <a class="footer__tel link bold" href="tel:+78005555152" target="_blank">8 (800) 555-51-52</a>
-               <p class="footer__call-text">Звонок по России бесплатный</p>
-            </div>
-         </div>
-         <ul class="footer__columns">
-            <li class="footer__column">
-               <ul class="footer__list">
-                  <li class="footer__list-item">
-                     <a class="footer__link link" href="#">Акустика</a>
-                  </li>
-                  <li class="footer__list-item">
-                     <a class="footer__link link" href="#">Hi-Fi</a>
-                  </li>
-                  <li class="footer__list-item">
-                     <a class="footer__link link" href="#">Винил</a>
-                  </li>
-                  <li class="footer__list-item">
-                     <a class="footer__link link" href="#">Наушники</a>
-                  </li>
-                  <li class="footer__list-item">
-                     <a class="footer__link link" href="#">Телевизоры</a>
-                  </li>
-                  <li class="footer__list-item">
-                     <a class="footer__link link" href="#">Проекторы</a>
-                  </li>
-               </ul>
-            </li>
-            <li class="footer__column">
-               <ul class="footer__list">
-                  <li class="footer__list-item">
-                     <a class="footer__lin link" href="#">Распродажа</a>
-                  </li>
-                  <li class="footer__list-item">
-                     <a class="footer__link link" href="#">Outlet</a>
-                  </li>
-                  <li class="footer__list-item">
-                     <a class="footer__link link" href="#">Акции</a>
-                  </li>
-                  <li class="footer__list-item">
-                     <a class="footer__link link" href="#">Бонусы и <wbr> скидки</a>
-                  </li>
-                  <li class="footer__list-item">
-                     <a class="footer__link link" href="#">Рассрочка</a>
-                  </li>
-               </ul>
-            </li>
-            <li class="footer__column">
-               <ul class="footer__list">
-                  <li class="footer__list-item">
-                     <a class="footer__link link" href="#">О компании</a>
-                  </li>
-                  <li class="footer__list-item">
-                     <a class="footer__link link" href="#">Контакты</a>
-                  </li>
-                  <li class="footer__list-item">
-                     <a class="footer__link link" href="#">Салоны</a>
-                  </li>
-                  <li class="footer__list-item">
-                     <a class="footer__link link" href="#">Новости</a>
-                  </li>
-               </ul>
-            </li>
-         </ul>
-      </div>
-      <p class="footer__copyright">
-         <script type="text/javascript">document.write(new Date().getFullYear());</script> &copy; / pult.ru / все
-         права защищены
-      </p>
-   </div>
-</footer>
-   
-   <script src="assets/js/script.js"></script>
+   @@include("assets/html/footer.html",{})
+   @@include("assets/html/popup.html",{})
+   @@include("assets/html/js.html",{})
 
 </body>
 

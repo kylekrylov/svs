@@ -1,0 +1,49 @@
+.automatization {
+   padding: 80px 0 40px;
+   @media (max-width: $max1280) {
+      padding-top: 40px;
+   }
+   @media (max-width: $max600) {
+      padding-top: 20px;
+   }
+   &__wrapper {
+   }
+
+   // .brends__header
+
+   &__header {
+   }
+
+   // .brends__title
+
+   &__title {
+   }
+
+   // .brends__link
+
+   &__link {
+   }
+
+   // .brends__slider
+
+   &__slider {
+   }
+
+   // .brends__slider-wrapper
+
+   &__slider-wrapper {
+      // align-items: center;
+   }
+
+   // .brends__slider-slide
+
+   &__slider-slide {
+      width: auto;
+   }
+
+   // .brends__slide-img
+
+   &__slide-img {
+      width: auto;
+   }
+}

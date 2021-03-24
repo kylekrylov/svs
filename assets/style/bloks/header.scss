@@ -1,0 +1,26 @@
+.header {
+   &__wrapper {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px 30px;
+      @media (max-width: $max1140) {
+         padding: 10px  24px;
+      }
+      @media (max-width: $max768) {
+         padding: 10px  10px;
+      }
+   }
+
+   &__link {
+   }
+
+   // .header__img
+
+   &__img {
+   }
+
+   // .header__img--pult
+
+   &__img--pult {
+   }
+}

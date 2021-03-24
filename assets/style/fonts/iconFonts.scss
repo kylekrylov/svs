@@ -1,0 +1,64 @@
+@font-face {
+  font-family: icomoon;
+  src: url("../fonts/icomoon.woff") format("woff"), url("fonts/icomoon.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+[class^="icon-"],
+[class*=" icon-"] {
+  font-family: icomoon;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-map-pin:before {
+  content: "\e900";
+  padding-right: 8px;
+}
+.icon-clock:before {
+  content: "\e901";
+}
+.icon-fone:before {
+  content: "\e902";
+}
+.icon-arrow-dawn:before {
+  content: "\e903";
+}
+.icon-calendar:before {
+  content: "\e904";
+}
+.icon-mail:before {
+  content: "\e905";
+}
+.icon-arrow-up:before {
+  content: "\e906";
+}
+.icon-arrow-right:before {
+  content: "\e907";
+}
+.icon-user:before {
+  content: "\e908";
+}
+.icon-user-ok:before {
+  content: "\e909";
+}
+.icon-search:before {
+  content: "\e910";
+}
+.icon-basket:before {
+  content: "\e911";
+}
+.icon-basket-ok:before {
+  // content: "\e911";
+}
+
+
+

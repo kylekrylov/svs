@@ -1,0 +1,112 @@
+.trend {
+   padding: 80px 0 40px;
+   @media (max-width: $max1280) {
+      padding-top: 40px;
+   }
+   @media (max-width: $max600) {
+      padding-top: 20px;
+   }
+   &__wrapper {
+   }
+
+   // .trend__header
+
+   &__header {
+   }
+
+   // .trend__title
+
+   &__title {
+   }
+
+   // .trend__link
+
+   &__link {
+   }
+
+   // .trend__container
+
+   &__container {
+      display: flex;
+   }
+
+   // .trend__main-card
+
+   &__main-card {
+      width: 50%;
+   }
+
+   &__cards {
+      display: flex;
+      flex-wrap: wrap;
+      width: 50%;
+   }
+
+   &__card {
+      width: 50%;
+   }
+   // .trend__card-img
+
+   &__card-img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+   }
+
+   // .trend__card-title
+
+   &__card-title {
+   }
+
+   // .trend__card-options
+
+   &__card-options {
+   }
+
+   // .trend__card-articl
+
+   &__card-articl {
+   }
+
+   // .trend__card-favorit
+
+   &__card-favorit {
+   }
+
+   // .trend__card-footer
+
+   &__card-footer {
+   }
+
+   // .trend__card-price
+
+   &__card-price {
+   }
+
+   // .trend__card-btn
+
+   &__card-btn {
+   }
+}
+.card {
+   color: $black;
+   &__img {
+   }
+
+   &__title {
+   }
+   &__options,
+   &__footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+   }
+   &__options {
+   }
+   &__price {
+   }
+
+   &__btn {
+      padding: 12px 40px;
+   }
+}
