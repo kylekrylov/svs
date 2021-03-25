@@ -996,6 +996,9 @@ button.swiper-pagination-bullet {
   height: 1px;
   background: black;
   border-radius: 1px;
+  -webkit-transform: translate(0, 50%);
+      -ms-transform: translate(0, 50%);
+          transform: translate(0, 50%);
 }
 
 .swiper-button-next::after,
@@ -1013,19 +1016,47 @@ button.swiper-pagination-bullet {
 .swiper-button-next:focus,
 .swiper-button-prev:hover,
 .swiper-button-prev:focus {
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   background: #2f80ed;
 }
 
+.swiper-button-next:hover::before,
+.swiper-button-next:focus::before,
+.swiper-button-prev:hover::before,
+.swiper-button-prev:focus::before {
+  position: absolute;
+  content: "";
+  width: 22px;
+  height: 1px;
+  background: white;
+  border-radius: 1px;
+}
+
+.swiper-button-next:hover::after,
+.swiper-button-next:focus::after,
+.swiper-button-prev:hover::after,
+.swiper-button-prev:focus::after {
+  position: absolute;
+  content: "";
+  width: 12px;
+  height: 12px;
+  border-right: 1px solid white;
+  border-bottom: 1px solid white;
+  border-radius: 1px;
+}
+
 .swiper-button-next::after {
-  -webkit-transform: translate(3px, 3%) rotate(-45deg);
-      -ms-transform: translate(3px, 3%) rotate(-45deg);
-          transform: translate(3px, 3%) rotate(-45deg);
+  -webkit-transform: translate(3px, 0) rotate(-45deg);
+      -ms-transform: translate(3px, 0) rotate(-45deg);
+          transform: translate(3px, 0) rotate(-45deg);
 }
 
 .swiper-button-prev::after {
-  -webkit-transform: translate(-3px, 3%) rotate(135deg);
-      -ms-transform: translate(-3px, 3%) rotate(135deg);
-          transform: translate(-3px, 3%) rotate(135deg);
+  -webkit-transform: translate(-3px, 0) rotate(135deg);
+      -ms-transform: translate(-3px, 0) rotate(135deg);
+          transform: translate(-3px, 0) rotate(135deg);
 }
 
 .menu__list {
@@ -1106,6 +1137,19 @@ button.swiper-pagination-bullet {
 .product__img {
   -o-object-fit: cover;
      object-fit: cover;
+  -webkit-transition: all 0.3s ease-in-out 0.1s;
+  -o-transition: all 0.3s ease-in-out 0.1s;
+  transition: all 0.3s ease-in-out 0.1s;
+}
+
+.product__img:hover,
+.product__img:focus {
+  -webkit-transform: scale(0.98);
+      -ms-transform: scale(0.98);
+          transform: scale(0.98);
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .product__description-block {
@@ -1156,9 +1200,9 @@ button.swiper-pagination-bullet {
 .product__color:hover,
 .product__color:focus,
 .product__color.active {
-  -webkit-transition: all 0.1s ease;
-  -o-transition: all 0.1s ease;
-  transition: all 0.1s ease;
+  -webkit-transition: all 0.1s ease-in-out;
+  -o-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
   background: #000;
   color: white;
   border: 1px solid white;
@@ -1191,13 +1235,14 @@ button.swiper-pagination-bullet {
 .product__btn:hover,
 .product__btn:focus {
   background: #2f80ed;
-  -webkit-transition: all 0.1s ease;
-  -o-transition: all 0.1s ease;
-  transition: all 0.1s ease;
+  -webkit-transition: all 0.1s ease-in-out;
+  -o-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
 }
 
 .awards {
-  margin: 40px 0 0 0;
+  padding-top: 80px;
+  padding-bottom: 40px;
 }
 
 .awards__slider-wrapper {
@@ -1210,13 +1255,20 @@ button.swiper-pagination-bullet {
 }
 
 .awards__slide {
-  max-width: 115px;
+  max-width: 132px;
 }
 
 .awards__slide-img {
   max-height: 115px;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.awards .swiper-button-next::before,
+.awards .swiper-button-prev::before {
+  -webkit-transform: translate(0, -50%);
+      -ms-transform: translate(0, -50%);
+          transform: translate(0, -50%);
 }
 
 .footer {
@@ -1385,6 +1437,11 @@ button.swiper-pagination-bullet {
     padding: 10px 64px;
   }
 
+  .awards {
+    padding-top: 40px;
+    padding-bottom: 0px;
+  }
+
   .footer {
     font-size: 12px;
   }
@@ -1424,6 +1481,21 @@ button.swiper-pagination-bullet {
 
   .swiper-button-next::after,
   .swiper-button-prev::after {
+    width: 6px;
+    height: 6px;
+  }
+
+  .swiper-button-next:hover::before,
+  .swiper-button-next:focus::before,
+  .swiper-button-prev:hover::before,
+  .swiper-button-prev:focus::before {
+    width: 12px;
+  }
+
+  .swiper-button-next:hover::after,
+  .swiper-button-next:focus::after,
+  .swiper-button-prev:hover::after,
+  .swiper-button-prev:focus::after {
     width: 6px;
     height: 6px;
   }

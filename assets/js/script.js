@@ -300,6 +300,7 @@ function goUp() {
 const widgetItem = document.querySelectorAll('.product__color');
 widgetItem.forEach((img) => {
    img.addEventListener('mouseover', (event) => {
+      img.closest('.product').querySelector('.product__btn').href = img.getAttribute('data-href');
       img.closest('.product').querySelector('.product__img').src = img.getAttribute('data-img');
             img.closest('.product').querySelectorAll('.product__color').forEach((item) => {
          item.classList.remove('active');
