@@ -1007,22 +1007,25 @@ button.swiper-pagination-bullet {
   border-right: 1px solid black;
   border-bottom: 1px solid black;
   border-radius: 1px;
+}
+
+.swiper-button-next:hover,
+.swiper-button-next:focus,
+.swiper-button-prev:hover,
+.swiper-button-prev:focus {
+  background: #2f80ed;
+}
+
+.swiper-button-next::after {
   -webkit-transform: translate(3px, 3%) rotate(-45deg);
       -ms-transform: translate(3px, 3%) rotate(-45deg);
           transform: translate(3px, 3%) rotate(-45deg);
 }
 
-.swiper-button-next:hover,
-.swiper-button-prev:hover {
-  background: #2f80ed;
-}
-
-.swiper-button-prev {
-  left: 10px;
-  right: auto;
-  -webkit-transform: rotate(180deg);
-      -ms-transform: rotate(180deg);
-          transform: rotate(180deg);
+.swiper-button-prev::after {
+  -webkit-transform: translate(-3px, 3%) rotate(135deg);
+      -ms-transform: translate(-3px, 3%) rotate(135deg);
+          transform: translate(-3px, 3%) rotate(135deg);
 }
 
 .menu__list {
@@ -1151,6 +1154,7 @@ button.swiper-pagination-bullet {
 }
 
 .product__color:hover,
+.product__color:focus,
 .product__color.active {
   -webkit-transition: all 0.1s ease;
   -o-transition: all 0.1s ease;
@@ -1184,11 +1188,35 @@ button.swiper-pagination-bullet {
           transform: translate(0, -1px);
 }
 
-.product__btn:hover {
+.product__btn:hover,
+.product__btn:focus {
   background: #2f80ed;
   -webkit-transition: all 0.1s ease;
   -o-transition: all 0.1s ease;
   transition: all 0.1s ease;
+}
+
+.awards {
+  margin: 40px 0 0 0;
+}
+
+.awards__slider-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.awards__slide {
+  max-width: 115px;
+}
+
+.awards__slide-img {
+  max-height: 115px;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .footer {
@@ -1381,6 +1409,23 @@ button.swiper-pagination-bullet {
 
   .banner__slide-img {
     height: calc(100vh - 146px);
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    width: 28px;
+    height: 28px;
+  }
+
+  .swiper-button-next::before,
+  .swiper-button-prev::before {
+    width: 12px;
+  }
+
+  .swiper-button-next::after,
+  .swiper-button-prev::after {
+    width: 6px;
+    height: 6px;
   }
 
   .menu__item {
